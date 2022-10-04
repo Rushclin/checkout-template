@@ -1,0 +1,222 @@
+/* Rushclin Takam on Dev Challenge */
+
+:root {
+
+    /* COLORS */
+
+    --cool-white: #F2F2F2;
+    --cool-gray: #333333;
+    --gray: #F2F2F2;
+    --orange: #F2994A;
+    --cool-gray-white: #E0E0E0;
+
+
+    /* TYPOGRAPHY */
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --ff-montserat: 'Montserat';
+}
+
+/* IMPORT FONTS */
+@font-face {
+    font-family: 'Montserat';
+    src: url('./../fonts/Montserrat-Regular.otf');
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-montserat);
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    color: var(--cool-gray)
+}
+
+.btn-gray {
+    padding: 1px;
+    border-radius: 5px;
+    background: var(--cool-gray-white);
+    align-items: center;
+}
+
+.header {
+    padding-block: 15px;
+    color: var(--cool-gray)
+}
+
+.container {
+    padding-inline: 15px;
+}
+
+
+/* DETAILS COMPONENT */
+.details {
+    padding: 10px;
+    background: var(--gray);
+    border-radius: 20px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.article-detail {
+    padding-left: 20px;
+
+}
+
+.article-title {
+    font-size: 18px;
+}
+
+.artcle-price {
+    font-weight: var(--fw-500);
+    color: var(--orange);
+    padding-right: 10px;
+}
+
+.article-last-price {
+    text-decoration: line-through;
+    color: var(--cool-gray);
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    padding: 15px 0;
+}
+
+.count {
+    display: flex;
+    border: solid 1px black;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.article-image>img {
+    border-radius: 20px;
+}
+
+.divider {
+    height: 1px;
+    background: var(--cool-gray);
+    margin: 10px 0
+}
+
+.cady-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* INFORMATION */
+
+.information {
+    padding-top: 20px;
+}
+
+.information-card {
+    padding-bottom: 15px;
+}
+
+.information-title {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+label {
+    font-size: 12px;
+    padding: 10px 0
+}
+
+.input-field {
+    display: flex;
+    position: relative;
+    padding-top: 5px;
+}
+
+.input-field>span {
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+
+.form {
+    padding-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px var(--cool-gray);
+    font-size: 15px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-6 {
+    width: 45%
+}
+
+.label-check {
+    font-size: 15px;
+    padding: 0 10px
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background: var(--orange);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cool-white);
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 500px) {
+
+    .header>.container {
+        padding-inline: 200px;
+    }
+
+    main>.container {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 200px;
+        flex-direction: row-reverse;
+        align-items: flex-start
+    }
+
+    .details {
+        margin-top: 20px;
+        padding: 25px
+    }
+}
